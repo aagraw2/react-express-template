@@ -1,0 +1,29 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "React app with Express server",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run client\" \"npm run server\"",
+    "client": "npm run dev --prefix client",
+    "server": "npm run start --prefix server",
+    "dev-server": "npm run dev --prefix server",
+    "lint": "eslint . --ext .js,.jsx",
+    "lint-fix": "eslint . --ext .js,.jsx --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amit Agrawal",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.3",
+    "nodemon": "^2.0.2"
+  }
+}
