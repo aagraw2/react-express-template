@@ -8,6 +8,9 @@
     },
     "rules": {
         "react/jsx-filename-extension": 0,
-        "react/forbid-prop-types": 0
+        "react/forbid-prop-types": 0,
+        "linebreak-style": 0,
+        "indent": 0,
+        "jsx-indent": 0
     }
 }
